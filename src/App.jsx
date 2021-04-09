@@ -1,10 +1,22 @@
 // @flow
 import React from "react";
 
-function App(): any {
-	return (
-		<div></div>
-	);
+import StorePicker from "./components/StorePicker";
+import Header from "./components/Header";
+import Order from "./components/Order";
+import Inventory from "./components/Inventory";
+
+function App(): React$Element<any> {
+  return (
+    <div className="catch-of-the-day">
+      <div className="menu">
+        <Header tagline="Fresh Seafood Market" />
+      </div>
+      <Order />
+      <Inventory />
+    </div>
+  // <StorePicker />
+  );
 }
 
 export default App;
